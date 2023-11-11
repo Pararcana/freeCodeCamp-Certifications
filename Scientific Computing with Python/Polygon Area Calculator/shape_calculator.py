@@ -24,10 +24,7 @@ class Rectangle:
   def get_picture(self):
     if max(self.width, self.height) > 50:
       return "Too big for picture."
-    picture = []
-    for _ in range(self.height):
-      picture.append("*" * self.width)
-    return "\n".join(picture) + "\n"
+    return ("*" * self.width + "\n") * self.height
 
   def get_amount_inside(self, shape):
     return self.width//shape.width * self.height//shape.height
