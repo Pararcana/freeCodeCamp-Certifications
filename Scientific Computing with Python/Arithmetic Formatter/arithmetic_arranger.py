@@ -1,4 +1,4 @@
-def arithmetic_arranger(problems, display = False):
+def arithmetic_arranger(problems, display=False):
   numbers = tuple(str(i) for i in range(10))
   arranged_problems = display and ([], [], [], []) or ([], [], [])
   if len(problems) > 5:
