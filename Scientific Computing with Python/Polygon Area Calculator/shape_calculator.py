@@ -31,12 +31,10 @@ class Rectangle:
 
 class Square(Rectangle):
   def __init__(self, side):
-    self.width = side
-    self.height = side
+    self.width, self.height = side, side
 
   def __str__(self):
     return f"Square(side={self.width})"
 
   def set_side(self, side):
-    self.width = side
-    self.height = side
+    Square.__init__(self, side)
