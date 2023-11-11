@@ -1,4 +1,4 @@
-def add_time(start, duration, weekday = ""):
+def add_time(start, duration, weekday=""):
   week = ("monday", "tuesday", "wednesday", 
     "thursday", "friday", "saturday", "sunday"
   )
