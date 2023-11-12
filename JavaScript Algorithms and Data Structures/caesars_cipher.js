@@ -11,5 +11,5 @@ function rot13(str) {
       plaintext.push(char);
     }
   }
-  return plaintext.join("")
+  return plaintext.join("");
 }
