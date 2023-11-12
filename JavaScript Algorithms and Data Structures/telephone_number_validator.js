@@ -2,21 +2,13 @@ const acceptable_chars = Array.from("0123456789-( )");
 const dashes_only = Array.from("0123456789-");
 const numbers = Array.from("0123456789");
 
-function open(v) {
-  return v == ")"
-}
-
-function close(v) {
-  return v == "("
-}
-
 function telephoneCheck(str) {
   let brackets_check = str.split("(").length === str.split(")").length
   let chars_check = str.split("").every(v => acceptable_chars.includes(v));
   
-  let open_brackets = str.split("").findIndex(open)
-  let closed_brackets = str.split("").findIndex(close)
-  let brackets_check2 = open_brackets - closed_brackets == 4 || (open_brackets == -1 && closed_brackets == -1);
+  let open = str.split("").findIndex(function(v) {return v==")"})
+  let closed = str.split("").findIndex(function(v) {return v=="("})
+  let brackets_check2 = open - closed == 4 || (open == -1 && closed == -1);
   
   let dash_check = Array.from(str).filter(v => dashes_only.includes(v));
   dash_check = dash_check.join("").split("-")
