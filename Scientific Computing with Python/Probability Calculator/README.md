@@ -6,4 +6,4 @@ This is the boilerplate for the Probability Calculator project. Instructions for
 Note that my code is in "prob_calculator.py", the rest of the code is part of the original boilerplate.
 
 The replit link where you can test it out is here: 
-> https://replit.com/@Pararcana/boilerplate-probability-calculator#main.py
+> https://replit.com/@Pararcana/boilerplate-probability-calculator#prob_calculator.py
