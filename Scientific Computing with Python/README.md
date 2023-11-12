@@ -6,4 +6,4 @@ In the Scientific Computing with Python Certification, you'll learn Python funda
 
 You can view my certificate here:
 
-https://www.freecodecamp.org/certification/Pararcana/scientific-computing-with-python-v7
+> https://www.freecodecamp.org/certification/Pararcana/scientific-computing-with-python-v7
