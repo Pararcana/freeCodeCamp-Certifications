@@ -11,7 +11,7 @@ function close(v) {
 }
 
 function telephoneCheck(str) {
-  let brackets_check = str.split('(').length === str.split(')').length
+  let brackets_check = str.split("(").length === str.split(")").length
   let chars_check = str.split("").every(v => acceptable_chars.includes(v));
   
   let open_brackets = str.split("").findIndex(open)
