@@ -6,4 +6,4 @@ This is the boilerplate for the Budget App project. Instructions for building yo
 Note that my code is in "budget.py", the rest of the code is part of the original boilerplate.
 
 The replit link where you can test it out is here:
-> https://replit.com/@Pararcana/boilerplate-budget-app#main.py
+> https://replit.com/@Pararcana/boilerplate-budget-app#budget.py
