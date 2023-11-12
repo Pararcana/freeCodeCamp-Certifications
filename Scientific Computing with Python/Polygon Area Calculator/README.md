@@ -6,4 +6,4 @@ This is the boilerplate for the Polygon Area Calculator project. Instructions fo
 Note that my code is in "shape_calculator.py", the rest of the code is part of the original boilerplate.
 
 The replit link where you can test it out is here:
-> https://replit.com/@Pararcana/boilerplate-polygon-area-calculator#main.py
+> https://replit.com/@Pararcana/boilerplate-polygon-area-calculator#shape_calculator.py
