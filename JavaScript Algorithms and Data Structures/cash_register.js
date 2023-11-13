@@ -10,7 +10,7 @@ function checkCashRegister(price, cash, cid) {
     original.push([...v])
   }
   cid = cid.reverse();
-  let solution = []
+  let solution = [];
   cash -= price;
   cash *= 100;
   for (let v of cid) {
@@ -19,8 +19,8 @@ function checkCashRegister(price, cash, cid) {
       let value_needed = Math.floor(cash/base_value);
       let real_value = Math.floor(v[1] * 100/base_value);
       let takeaway = Math.min(value_needed, real_value) * base_value;
-      cash -= takeaway
-      v[1] -= takeaway/100
+      cash -= takeaway;
+      v[1] -= takeaway/100;
       if (takeaway) {
         solution.push([v[0], takeaway/100]);
       }
