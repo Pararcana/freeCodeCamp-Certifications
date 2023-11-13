@@ -3,8 +3,8 @@ const dashes_only = Array.from("0123456789-");
 const numbers = Array.from("0123456789");
 
 function telephoneCheck(str) {  
-  let open = str.split("").findIndex(function(v) {return v==")"})
-  let closed = str.split("").findIndex(function(v) {return v=="("})
+  let open = str.split("").findIndex(v => v === ")")
+  let closed = str.split("").findIndex(v => v === "(")
   let brackets_check = str.split("(").length === str.split(")").length;
   brackets_check = (open - closed == 4 && brackets_check) || (open == -1 && closed == -1);
   let chars_check = str.split("").every(v => acceptable_chars.includes(v)); 
