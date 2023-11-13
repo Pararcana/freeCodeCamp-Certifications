@@ -5,7 +5,6 @@ const values = {
 }
 
 function checkCashRegister(price, cash, cid) {
-  console.log(cid)
   let original = [];
   for (let v of cid) {
     original.push([...v])
