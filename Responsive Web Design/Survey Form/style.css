@@ -1,20 +1,21 @@
 html {
+  font-family: cursive;
   text-align: center;
   height: 100%;
   width: 100%;
 }
 
 h1 {
-  font-family: cursive;
   text-shadow: 2px 2px black;
   text-decoration-line: underline;
   color: white;
 }
 
-body {
-  background-color: #56adc2;
+p {
+  text-shadow: 1px 1px black;
+  color: white;
 }
 
-form {
-  align-items: center;
+body {
+  background-image: linear-gradient(#377ae6, #7eadb9);
 }
