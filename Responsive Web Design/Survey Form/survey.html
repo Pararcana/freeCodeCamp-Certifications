@@ -11,6 +11,7 @@
   <h1 id="title">Survey Form</h1>
   <p id="description">Please fill in this survey.</p>
   <form id="survey-form">
+    
     <label id="name-label">Name:</label><br>
     <input type="text" id="name"
       placeholder="John Smith" required><br>
@@ -20,8 +21,29 @@
     <label id="number-label">Number (optional):</label><br>
     <input type="number" id="number" placeholder="012-345-6789"
       min="1" max="999999999999999999"><br>
+    
+    <label id="gender-label">Choose your gender:</label><br>
+    <select id="dropdown">
+      <option selected disabled>Pick one</option>
+      <option>Male</option>
+      <option>Female</option>
+    </select><br>
+
+    <label id="select-label">Would you like to recieve weekly emails?</label><br>
+    <input type="radio" id="yes" name="email-bool" value="Yes">
+    <label id="yes-label">Yes</label><br>
+    <input type="radio" id="no" name="email-bool" value="No">
+    <label id="no-label">No</label><br>
+
+    <label id="checkbox-label">Gamering</label><br>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label id="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label id="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label id="vehicle3"> I have a boat</label><br>
+    
   </form>
-  <script src="script.js"></script>
 </body>
 
 </html>
