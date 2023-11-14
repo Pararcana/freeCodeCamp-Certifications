@@ -5,7 +5,7 @@ const values = {
 }
 
 function checkCashRegister(price, cash, cid) {
-  let total_cash = 0
+  let total_cash = 0;
   let solution = [];
   cash -= price;
   cash *= 100;
@@ -27,10 +27,10 @@ function checkCashRegister(price, cash, cid) {
   if (cash === 0) {
     let still_open = total_cash != oricash;
     if (still_open) {
-      return {status: "OPEN", change: solution}
+      return {status: "OPEN", change: solution};
     } else {
-      cid = cid.reverse()
-      return {status: "CLOSED", change: cid}
+      cid = cid.reverse();
+      return {status: "CLOSED", change: cid};
     }
   } else {
     return {status: "INSUFFICIENT_FUNDS", change: []};
