@@ -1,18 +1,18 @@
 html {
+  text-align: center;
   height: 100%;
   width: 100%;
 }
 
 h1 {
   font-family: cursive;
-  stroke: black;
-  stroke-width: 5px;
+  text-shadow: 2px 2px black;
+  text-decoration-line: underline;
   color: white;
 }
 
 body {
   background-color: #56adc2;
-  font: fantasy;
 }
 
 form {
