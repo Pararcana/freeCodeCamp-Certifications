@@ -5,33 +5,32 @@ const values = {
 }
 
 function checkCashRegister(price, cash, cid) {
-  let original = [];
-  for (let v of cid) {
-    original.push([...v])
-  }
-  cid = cid.reverse();
+  let total_cash = 0
   let solution = [];
   cash -= price;
   cash *= 100;
+  let oricash = cash
+  cid = cid.reverse();
   for (let v of cid) {
     let base_value = values[v[0]];
     if (base_value <= cash) {
       let value_needed = Math.floor(cash/base_value);
       let real_value = Math.floor(v[1] * 100/base_value);
       let takeaway = Math.min(value_needed, real_value) * base_value;
+      total_cash += real_value * base_value
       if (takeaway) {
         cash -= takeaway;
-        v[1] -= takeaway/100;
         solution.push([v[0], takeaway/100]);
       }
     }
   }
   if (cash === 0) {
-    let still_open = !(cid.every(v => v[1] === 0));
+    let still_open = total_cash != oricash;
     if (still_open) {
       return {status: "OPEN", change: solution}
     } else {
-      return {status: "CLOSED", change: original}
+      cid = cid.reverse()
+      return {status: "CLOSED", change: cid}
     }
   } else {
     return {status: "INSUFFICIENT_FUNDS", change: []};
