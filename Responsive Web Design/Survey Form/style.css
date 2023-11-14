@@ -1,0 +1,20 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-family: cursive;
+  stroke: black;
+  stroke-width: 5px;
+  color: white;
+}
+
+body {
+  background-color: #56adc2;
+  font: fantasy;
+}
+
+form {
+  align-items: center;
+}
