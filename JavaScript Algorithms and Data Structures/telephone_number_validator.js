@@ -1,4 +1,5 @@
 const numbers = Array.from("0123456789");
+
 function telephoneCheck(str) {
   let re_check = /[(]?[- ]?[0-9]{3}[)]?[- ]?[0-9]{3}[- ]?[0-9]{4}/.test(str);
   let brackets_check = str.split("(").length === str.split(")").length;
