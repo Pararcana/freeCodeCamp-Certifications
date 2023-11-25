@@ -1,24 +1,13 @@
-const acceptable_chars = Array.from("0123456789-( )");
-const dashes_only = Array.from("0123456789-");
 const numbers = Array.from("0123456789");
-
-function telephoneCheck(str) {  
-  let open = str.split("").findIndex(v => v === ")")
-  let closed = str.split("").findIndex(v => v === "(")
+function telephoneCheck(str) {
+  let a = "[(]?[- ]?[0-9]{3}[)]?";
+  let b = "[- ]?[0-9]{3}";
+  let c = "[- ]?[0-9]{4}";
+  let re = new RegExp(a+b+c);
+  let re_check = re.test(str);
   let brackets_check = str.split("(").length === str.split(")").length;
-  brackets_check = (open - closed == 4 && brackets_check) || (open == -1 && closed == -1);
-  let chars_check = str.split("").every(v => acceptable_chars.includes(v)); 
-  let dash_check = Array.from(str).filter(v => dashes_only.includes(v));
-  dash_check = dash_check.join("").split("-")
-  if (dash_check.length === 2) {
-    dash_check = dash_check[1].length == 4;
-  } else if (dash_check.length === 3) {
-    dash_check = dash_check[1].length == 3 && dash_check[2].length == 4;
-  } else if (dash_check.length !== 1) {
-    dash_check = false;
-  }
-
-  str = Array.from(str).filter(v => numbers.includes(v));
-  let length_check = str.length === 10 || (str.length === 11 && str[0] === "1")
-  return Array(length_check, chars_check, brackets_check, dash_check).every(Boolean)
+  let nums = Array.from(str).filter(v => numbers.includes(v));
+  let length_check = nums.length === 10 || (nums.length === 11 && nums[0] === "1")
+  let start_check = !(str[0] === "-" || str[str.length - 1] === ")")
+  return Array(start_check, re_check, brackets_check, length_check).every(Boolean);
 }
