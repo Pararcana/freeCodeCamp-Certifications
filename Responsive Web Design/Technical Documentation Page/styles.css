@@ -14,14 +14,15 @@ nav {
 }
 
 h2 {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   display: inline;
-  text-decoration: underline;
   padding-left: 5px;
+  padding-right: 5px;
   border-left-style: solid;
   border-width: 5px;
+  background-color: #d8a8ff;
   border-color: #9C3FFF;
-  border-top-style: solid;
-  text-shadow: 1.5px 1px 3px #07000f;
 }
 
 header {
@@ -29,8 +30,12 @@ header {
 }
 
 p, code {
+  width: 50%;
   margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
   color: #37135e;
+  background-color: #dfb8ff;
 }
 
 hr {
@@ -43,7 +48,7 @@ hr {
   border-right-width: 0px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   h3 {
     color: #FFFFFF;
     text-shadow: 1.5px 1.5px #07000f;
@@ -67,6 +72,8 @@ hr {
     padding: 1em;
     text-align: left;
     border-style: double;
+    border-radius: 5px;
+    background-color: #d8a8ff;
   }
 
   .nav-link {
