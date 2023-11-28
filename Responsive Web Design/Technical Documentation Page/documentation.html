@@ -9,7 +9,10 @@
 
 <body>
   <nav id="navbar">
-    <br><img id="icon" alt="icon" src="https://images.nightcafe.studio/jobs/hz002g5LtCWzYu553vjf/hz002g5LtCWzYu553vjf--2--vlgd7_15.625x.jpg?tr=w-1600,c-at_max">
+    <br><div id="icon-container">
+      <img id="icon" alt="icon" src="https://images.nightcafe.studio/jobs/hz002g5LtCWzYu553vjf/hz002g5LtCWzYu553vjf--2--vlgd7_15.625x.jpg?tr=w-1600,c-at_max">
+      <header id="icon-text"><h3>Chess Project Documentation</h3></header>
+    </div>
     <ul id="nav-list">
       <li><a href="#How_to_Play" class="nav-link">How to Play</a></li><br><hr>
       <li><a href="#About_the_Board" class="nav-link">About the Board</a></li><br><hr>
@@ -25,12 +28,12 @@
 
       <section class="how-to-play">
         <br><header>In general:</header>
-        <p>Chess is a two player game, where players take turns, with the objective of checkmating their opponent's king. Checkmate is defined as where the king is in check, and has no legal moves to get out of check.</p>
+        <p>Chess is a two player game, where players take turns, with the objective of checkmating their opponent's king. The white player always starts first. The game ends when either checkmate has been achieved, timeout, or by agreement. Checkmate is defined as where the king is in check, and has no legal moves to get out of check. Check is defined as when the king is attacked by an opposing piece.</p>
       </section>
 
       <section class="how-to-play">
         <header>King</header>
-        <p>The king can move one square in any direction. It may also castle with a rook, assuming neither the rook, nor the king have moved previously. You may not castle through check, into check or out of check. Check is defined as when the king can be captured by an opposing piece.</p>
+        <p>The king can move one square in any direction. It may also castle with a rook, assuming neither the rook, nor the king have moved previously. When castling, the king takes two steps towards the rook, and the rook moves ajacent to the king, on the opposite side. You may not castle through check, into check or out of check.</p>
       </section>
 
       <section class="how-to-play">
@@ -40,22 +43,22 @@
 
       <section class="how-to-play">
         <header>Rook</header>
-        <p>The rook can move as many squares as needed, horizontally or vertically, provided no pieces are in the way. When castling with a king, the king takes two steps towards the rook, and the rook moves ajacent to the king, on the opposite side.</p>
+        <p>The rook can move as many squares as needed, horizontally or vertically, provided no pieces are in the way.</p>
       </section>
 
       <section class="how-to-play">
         <header>Bishop</header>
-        <p>The bishop can move as many squares as needed diagonally, provided no pieces are in the way.</p>
+        <p>The bishop can move as many squares as needed diagonally, provided no pieces are in the way. Each bishop starts on one colour, and must stay on that colour throughout the game.</p>
       </section>
 
       <section class="how-to-play">
         <header>Knight</header>
-        <p>The knight moves in a "L-shape"; two squares horizontally or vertically, and one square perpendicularly. The knight is unique in that it can jump over other pieces.</p>
+        <p>The knight moves in a "L-shape"; two squares horizontally or vertically, and one square perpendicularly. The knight is unique in that it is the only piece that can jump over other pieces.</p>
       </section>
 
       <section class="how-to-play">
         <header>Pawn</header>
-        <p>The pawn can only move forwards one space, unless it has not been moved before, then it may move forwards two spaces. It captures one space diagonally in front of it, and there is a special move that can be used to capture enemy pawns if they move forwards two spaces called "En passant".</p>
+        <p>The pawn can only move forwards one space, unless it has not been moved before, then it may move forwards two spaces. It captures one space diagonally in front of it, and when it reaches the end of the board, it can be promoted to any piece that is not a king. There is also a special move, called "En Passant", which you may want to look up.</p>
       </section>
     </section>
 
@@ -136,12 +139,12 @@
 
     <section class="main-section" id="References">
       <header><h2>References</h2></header><br>
-      <ul>
-        <li><a href="https://www.chess.com/">Play Chess Here</a></li>
-        <li><a href="https://www.chessprogramming.org/">Chess Programming Wiki</a></li>
-        <li><a href="https://love2d.org/">Love2D's Documentation</a></li>
-        <li><a href="https://www.youtube.com/watch?v=U4ogK0MIzqk">Sebastian Lague's Chess Bot Video Documentation 1</a></li>
-        <li><a href="https://www.youtube.com/watch?v=_vqlIPDR2TU">Sebastian Lague's Chess Bot Video Documentation 2</a></li>
+      <ul id="references-list">
+        <li><a href="https://www.chess.com/"><img class="img-link" src="https://play-lh.googleusercontent.com/a7R5nyeaX8lIEWdBOxjlvbyq9LcFwh3XMvNtBPEKR3LPGgdvgGrec4sJwn8tUaaSkw" alt="chess.com" title="Play Chess Here"></a></li>
+        <li><a href="https://www.chessprogramming.org/"><img class="img-link" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Chess_Programming.svg/1200px-Chess_Programming.svg.png" alt="chess-programming wiki" title="Chess Programming Wiki"></a></li>
+        <li><a href="https://love2d.org/"><img class="img-link" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/L%C3%96VE_app_icon_%280.10.1%29.svg/1024px-L%C3%96VE_app_icon_%280.10.1%29.svg.png" alt="love2d wiki" title="Love2D's Documentation"></a></li>
+        <li><a href="https://stockfishchess.org/"><img class="img-link" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Stockfish_icon_%282010-2020%29.png" alt="stockfish" title="Stockfish"></a></li>
+        <li><a href="https://www.youtube.com/watch?v=U4ogK0MIzqk"><img class="img-link" src="https://cdn-icons-png.flaticon.com/256/1384/1384060.png" alt="yt chess bot video" title="Lague's Chess Bot Video"></a></li>
       </ul>
     </section>
 
