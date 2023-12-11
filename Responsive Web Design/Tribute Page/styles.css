@@ -1,9 +1,42 @@
 html {
   height: 100%;
   width: 100%;
+  text-align: center;
+  background-color: #ddbe81;
+}
+
+#title {
+  display: inline;
+  text-decoration: underline;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 2px solid #81816a;
+  border-right: 2px solid #81816a;
+  color: #4d1f00;
 }
 
 #image {
   max-width: 100%;
+  border-radius: inherit;
   display: block;
+}
+
+#img-div {
+  width: 80%;
+  margin-left: 10%;
+  background-color: #d6a756;
+  border-radius: 10px;
+}
+
+#img-caption {
+  font-family: "Lucida Console", "Courier New", monospace;
+  padding: 10px;
+  color: #4d1f00;
+}
+
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20%;
+  text-align: left;
+  color: #4d1f00;
 }
