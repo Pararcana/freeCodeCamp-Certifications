@@ -1,7 +1,6 @@
 # Tribute Page
 
-The replit link is here:
-> https://replit.com/@Pararcana/boilerplate-tribute-page
-
 The website link is here:
-> https://boilerplate-tribute-page.pararcana.repl.co
+> hhttps://codepen.io/Paracosm-Arcana/full/YzBmvjp
+
+A slight detour into economics, this project is just here to reinforce the basics of website development.
