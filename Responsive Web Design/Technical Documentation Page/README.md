@@ -1,7 +1,7 @@
 # Technical Documentation Page
 
-The replit link is here:
-> https://replit.com/@Pararcana/boilerplate-technical-documentation/
-
 The website link is here:
-> https://boilerplate-technical-documentation.pararcana.repl.co/
+> https://codepen.io/Paracosm-Arcana/full/VwgodBK
+
+This page will serve as the basis for my documentation page for my Chess Bot!
+I learnt the basics of responsive web design here, such as changing format based on screen size.
