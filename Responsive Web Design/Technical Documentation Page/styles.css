@@ -1,154 +1,53 @@
 html {
-  background-color: #e6c7ff;
-  scroll-behavior: smooth;
   height: 100%;
   width: 100%;
+  text-align: center;
+  background-color: #f2e4c9;
 }
 
-nav {
-  display: none;
+#title {
+  display: inline;
+  text-decoration: underline;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 2px solid #81816a;
+  border-right: 2px solid #81816a;
+  color: #4d1f00;
 }
 
-.how-to-play, .board-instructions, 
-.bot-workings, .code-snippets {
-  margin: 10px;
+img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: inherit;
+  display: block;
 }
 
-.img-link {
-  width: 5em;
-  height: 5em;
-  border-radius: 5px;
+div {
+  width: 80%;
+  margin-left: 10%;
+  background-color: #ddbe81;
+  border-radius: 10px;
+}
+
+figcaption {
+  font-family: "Lucida Console", "Courier New", monospace;
+  padding: 10px;
+  color: #4d1f00;
 }
 
 h2 {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  display: inline;
-  padding: 6px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-left-style: solid;
-  border-width: 7px;
-  background-color: #d8a8ff;
-  border-color: #9C3FFF;
+    color: #4d1f00;
 }
 
-header {
-  color: #250c40;
-  display: inline;
-  padding: 3px;
-  border-radius: 5px;
-  border-width: 1px;
-  border-bottom-style: solid;
-  border-top-style: solid;
+figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4d1f00;
 }
 
-p, code {
-  width: 95%;
-  margin: 20px;
-  padding: 10px;
-  border-radius: 10px;
-  color: #37135e;
-  background-color: #dfb8ff;
-}
-
-hr {
-  width: 95%;
-  border-style: solid;
-  padding-top: 15px;
-  border-color: #7D00FF;
-  border-bottom-width: 0px;
-  border-left-width: 0px;
-  border-right-width: 0px;
-}
-
-#references-list {
-  list-style-type: none;
-}
-
-#references-list li {
-  display: inline-block;
-  padding-right: 1em;
-}
-
-#references-list li a img {
-  border-style: solid;
-  border-width: 5px;
-  border-radius: 10px;
-  border-color: #9C3FFF;
-  transition: border-color 0.5s;
-}
-
-#references-list li a img:hover {
-  border-color: #685f0d;
-}
-
-@media only screen and (min-width: 1000px) {
-  #icon-container {
-    position: relative;
-    text-align: center;
-  }
-  
-  #icon {
-    width: 12vw;
-    height: 12vw;
-    border-radius: 1em;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #4a4054;
-  }
-
-  #icon-text {
-    color: #eaf64c;
-    text-shadow: 2px 2px 3px #1c0033;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  nav {
-    display: block;
-    position: fixed;
-    width: 15%;
-    height: 100%;
-    background-color: #c085ff;
-    top: 0;
-    left: 0;
-    text-align: center;
-    border-right-style: dashed;
-  }
-
-  #nav-list {
-    list-style-type: none;
-    margin: 1em;
-    padding: 1em;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    text-align: center;
-    border-style: double;
-    border-radius: 10px;
-    background-color: #d8a8ff;
-  }
-
-  .nav-link {
-    color: #7D00FF;
-    text-decoration: inherit;
-    transition: color 0.25s, font-size 0.5s;
-  }
-
-  .nav-link:hover {
-    color: #685f0d;
-    font-size: 20px;
-  }
-
-  main {
-    position: relative;
-    width: 84%;
-    left: 16%;
-  }
-
-  p, code {
-    width: 50%;
-  }
+p, li {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20%;
+  text-align: left;
+  color: #4d1f00;
+  width: 60%;
 }
