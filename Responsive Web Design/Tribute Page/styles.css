@@ -2,7 +2,7 @@ html {
   height: 100%;
   width: 100%;
   text-align: center;
-  background-color: #ddbe81;
+  background-color: #f2e4c9;
 }
 
 #title {
@@ -15,28 +15,39 @@ html {
   color: #4d1f00;
 }
 
-#image {
+img {
+  width: 100%;
   max-width: 100%;
   border-radius: inherit;
   display: block;
 }
 
-#img-div {
+div {
   width: 80%;
   margin-left: 10%;
-  background-color: #d6a756;
+  background-color: #ddbe81;
   border-radius: 10px;
 }
 
-#img-caption {
+figcaption {
   font-family: "Lucida Console", "Courier New", monospace;
   padding: 10px;
   color: #4d1f00;
 }
 
-li {
+h2 {
+    color: #4d1f00;
+}
+
+figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4d1f00;
+}
+
+p, li {
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 20%;
   text-align: left;
   color: #4d1f00;
+  width: 60%;
 }
