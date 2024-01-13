@@ -21,9 +21,12 @@ header {
 #ss-list {
   width: 40%;
   display: flex;
+  flex-direction: row;
+  overflow: auto;
 }
 
 .screenshots {
+  display: inline-block;
   max-width: 100%;
 }
 
@@ -77,5 +80,15 @@ h2 {
   
   p {
     width: 60%;
+  }
+  
+  #ss-list {
+    flex-direction: column;
+  }
+  
+  .screenshots {
+    border-style: solid;
+    border-color: #555555;
+    margin: 5px;
   }
 }
