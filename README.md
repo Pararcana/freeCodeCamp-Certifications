@@ -8,3 +8,6 @@ You can view my "JavaScript Algorithms and Data Structures" certificate here:
 
 You can view my "Scientific Computing with Python" certificate here:
 > https://www.freecodecamp.org/certification/Pararcana/scientific-computing-with-python-v7
+
+You can view my "Responsive Web Design" certificate here:
+> https://www.freecodecamp.org/certification/Pararcana/responsive-web-design
